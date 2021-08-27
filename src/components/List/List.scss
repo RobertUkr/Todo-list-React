@@ -1,0 +1,61 @@
+.list {
+    margin-bottom: 20px;
+
+    &__add-button {
+        svg {
+            path {
+                stroke: #868686;
+            }
+        }
+
+        span {
+            color: #767676;
+            font-size: 14px;
+            cursor: pointer;
+            font-weight: 500;
+            line-height: 17px;
+        }
+
+        &:hover {
+            svg {
+                path {
+                    stroke: #000000;
+                }
+            }
+            span {
+                color: #000000;
+            }
+        }
+    }
+    li {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        padding: 10px 12px;
+        margin-bottom: 5px;
+
+        &.active {
+            background: #FFFFFF;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+            border-radius: 4px;
+        }
+        .badge{
+            position: relative;
+            left: 4px;
+        }
+    }
+
+    i {
+        margin-right: 8px;
+        display: inline-flex;
+
+        svg {
+            path {
+                fill: #7c7c7c;
+            }
+
+        }
+    }
+
+    
+}
